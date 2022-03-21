@@ -21,7 +21,7 @@ You can push the folowing values in json format. When target temperature is chan
 - **`ambient_temperature`** your temperature readings numeric payloads.
 - **`target_temperature`** your thermostat setpoint numeric payloads.
 - **`hvac_state`** string (`off`, `heating`, `cooling`) payload.
-- **`has_leave`** boolean (`true`, `false`) payloads.
+- **`has_leaf`** boolean (`true`, `false`) payloads.
 - **`away`** boolean (`true`, `false`) payloads.
 
 ```
@@ -31,6 +31,8 @@ msg.payload = {
     "hvac_state": "heating",
     "has_leaf": false,
     "away": false
-}
+};
+
+msg.topic = "update";
 
 ```
