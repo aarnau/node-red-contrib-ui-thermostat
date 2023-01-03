@@ -36,3 +36,4 @@ msg.payload = {
 msg.topic = "update";
 
 ```
+Please note: In addition to msg.payload, a msg.topic containing "update" is required to update the UI element.
