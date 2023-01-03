@@ -909,7 +909,7 @@ module.exports = function (RED) {
           $scope.$watch(
             'msg',
             function (data) {
-              if (data?.topic !== undefined && data.topic === 'update') {
+              if (data.topic !== undefined && data.topic === 'update') {
                 $scope.nest.target_temperature = data.payload.target_temperature
                 $scope.nest.ambient_temperature =
                   data.payload.ambient_temperature
